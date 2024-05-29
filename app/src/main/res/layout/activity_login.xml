@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Authentication.LoginActivity">
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true">
+
+        <ImageView
+            android:layout_width="300dp"
+            android:layout_height="150dp"
+            android:id="@+id/logo"
+            android:layout_centerHorizontal="true"
+            android:src="@mipmap/logo"/>
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/edtTxtEmail"
+            android:hint="Email"
+            android:layout_below="@id/logo"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:inputType="textEmailAddress"
+            android:layout_marginTop="20dp"/>
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/edtTxtPassword"
+            android:hint="Password"
+            android:inputType="textPassword"
+            android:layout_below="@id/edtTxtEmail"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:layout_marginTop="20dp"
+            />
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/btnLogin"
+            android:text="Login"
+            android:layout_below="@+id/edtTxtPassword"
+            android:layout_marginTop="20dp"
+            android:layout_centerHorizontal="true"
+            android:background="@color/orange"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:id="@+id/txtWarning"
+            android:textColor="@color/colorAccent"
+            android:text="Warning"
+            android:layout_below="@+id/btnLogin"
+            android:layout_marginTop="20dp"
+            android:visibility="gone"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Don't have an account? Register from here"
+            android:textColor="@color/blue"
+            android:layout_below="@+id/txtWarning"
+            android:layout_marginTop="20dp"
+            android:id="@+id/txtRegister"
+            android:layout_centerHorizontal="true"/>
+
+    </RelativeLayout>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Devoloped by DucThang"
+        android:layout_centerHorizontal="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="10dp"
+        android:id="@+id/txtLicense"
+        android:textStyle="italic"/>
+
+</RelativeLayout>

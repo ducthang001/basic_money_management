@@ -1,0 +1,159 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Authentication.RegisterActivity">
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true">
+        
+        <ImageView
+            android:layout_width="100dp"
+            android:layout_height="50dp"
+            android:id="@+id/logo"
+            android:src="@mipmap/logo"
+            android:layout_centerHorizontal="true"/>
+        
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/logo"
+            android:layout_marginTop="50dp"
+            android:layout_marginLeft="30dp"
+            android:layout_marginRight="30dp"
+            android:hint="Email"
+            android:inputType="textEmailAddress"
+            android:id="@+id/edtTxtEmail"
+            />
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/edtTxtEmail"
+            android:layout_marginTop="10dp"
+            android:layout_marginLeft="30dp"
+            android:layout_marginRight="30dp"
+            android:hint="Password"
+            android:inputType="textPassword"
+            android:id="@+id/edtTxtPassword"
+            />
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/edtTxtPassword"
+            android:layout_marginTop="10dp"
+            android:layout_marginLeft="30dp"
+            android:layout_marginRight="30dp"
+            android:hint="Name"
+            android:id="@+id/edtTxtName"
+            />
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/edtTxtName"
+            android:layout_marginTop="10dp"
+            android:layout_marginLeft="30dp"
+            android:layout_marginRight="30dp"
+            android:hint="Address"
+            android:lines="2"
+            android:id="@+id/edtTxtAddress"
+            />
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/imagesRelLayout"
+            android:layout_centerHorizontal="true"
+            android:layout_below="@+id/edtTxtAddress"
+            android:layout_marginTop="10dp">
+            
+            <ImageView
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:id="@+id/firstImage"
+                android:src="@mipmap/boy"/>
+
+            <ImageView
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:id="@+id/secondImage"
+                android:src="@mipmap/girl"
+                android:layout_toRightOf="@+id/firstImage"
+                android:layout_marginLeft="10dp"/>
+
+            <ImageView
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:id="@+id/thirdImage"
+                android:src="@mipmap/man"
+                android:layout_toRightOf="@+id/secondImage"
+                android:layout_marginLeft="10dp"/>
+
+            <ImageView
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:id="@+id/forthImage"
+                android:src="@mipmap/celebrity"
+                android:layout_toRightOf="@+id/thirdImage"
+                android:layout_marginLeft="10dp"/>
+
+            <ImageView
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:id="@+id/fifthImage"
+                android:src="@mipmap/woman"
+                android:layout_toRightOf="@+id/forthImage"
+                android:layout_marginLeft="10dp"/>
+
+        </RelativeLayout>
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:text="Register"
+            android:id="@+id/btnRegister"
+            android:layout_below="@+id/imagesRelLayout"
+            android:layout_marginTop="20dp"
+            android:background="@color/orange"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:text="Warning"
+            android:textColor="@color/colorAccent"
+            android:layout_below="@+id/btnRegister"
+            android:layout_marginTop="20dp"
+            android:visibility="gone"
+            android:id="@+id/txtWarning"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Have an account? Login from here"
+            android:layout_below="@+id/txtWarning"
+            android:layout_centerHorizontal="true"
+            android:textColor="@color/blue"
+            android:layout_marginTop="20dp"
+            android:id="@+id/txtLogin"/>
+        
+    </RelativeLayout>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Developped By DucThang"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="10dp"
+        android:textStyle="italic"
+        android:id="@+id/txtLicense"/>
+
+</RelativeLayout>
